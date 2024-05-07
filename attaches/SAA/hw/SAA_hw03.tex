@@ -1,0 +1,118 @@
+%%% XeLatex, TeXLive
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsthm}  % assumes amsmath package installed
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{verbatim}
+%\usepackage[numbered]{mcode}
+\usepackage{float}
+\usepackage{tikz}
+    \usetikzlibrary{shapes,arrows}
+    \usetikzlibrary{arrows,calc,positioning}
+    \tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=1.5cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+    }
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\newenvironment{problem}[2][练习题]
+    { \begin{mdframed}[backgroundcolor=gray!5] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+% Define solution environment
+\newenvironment{solution}
+    {\textbf{解:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+% Define solution environment
+\newenvironment{solution2}
+    {\textbf{证明:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+%\usepackage[utf8]{ctex}
+\usepackage[punct]{ctex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large\textbf{3212090710***\quad 姓名} \hfill \textbf{《高等代数选讲》作业 - No.~\Huge{03}}   \\
+专业: 信息与计算科学 \hfill 学号: 3212090710*** \\
+\normalsize 课程名称: 385460 - 高等代数选讲 (Selection of Advanced Algebra) \hfill 学期: 2024 春 (Spring 2024)\\
+授课教师: 艾武（教授） \hfill 完成时间: 2024年03月25日 \\
+\noindent\rule{7in}{1.8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{1}
+\textbf{（高等代数，重庆大学，2024年）}: 设线性方程组
+$$
+\left\{\begin{array}{l}
+k x_1+x_2+x_3=k-3 ; \\
+x_1+k x_2+x_3=-2 ; \\
+x_1+x_2+k x_3=-2 .
+\end{array}\right.
+$$
+
+(1) $k$ 为何值时, 方程组无解?
+
+(2) $k$ 为何值时, 方程组存在唯一解?
+
+(3) $k$ 为何值时, 方程组存在无穷多解? 并求出通解.
+\end{problem}
+
+\begin{solution}
+%% 过程写这里
+
+\end{solution} 
+
+%\noindent\rule{7in}{2.8pt} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{2}
+\textbf{（高等代数，南昌大学，2024年）}: 设 $\alpha_i=\left(a_{i 1}, a_{i 2}, \cdots, a_{i n}\right)(i=1,2, \cdots, s), \beta=\left(b_1, b_2, \cdots, b_n\right)$. 证明: 若线性方程组
+$$
+\left\{\begin{array}{c}
+a_{11} x_1+a_{12} x_2+\cdots+a_{1 n} x_n=0 ; \\
+a_{21} x_1+a_{22} x_2+\cdots+a_{2 n} x_n=0 ; \\
+\cdots \cdots \\
+a_{s 1} x_1+a_{s 2} x_2+\cdots+a_{s n} x_n=0 .
+\end{array}\right.
+$$
+的解全是 $b_1 x_1+b_2 x_2+\cdots+b_n x_n=0$ 的解, 那么 $\beta$ 可经 $\alpha_1, \alpha_2, \cdots, \alpha_s$ 线性表出.
+\end{problem}
+
+\begin{solution2}
+%% 过程写这里
+
+
+\end{solution2} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

@@ -1,0 +1,149 @@
+%%% XeLatex, TeXLive
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsthm}  % assumes amsmath package installed
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{verbatim}
+%\usepackage[numbered]{mcode}
+\usepackage{float}
+\usepackage{tikz}
+    \usetikzlibrary{shapes,arrows}
+    \usetikzlibrary{arrows,calc,positioning}
+    \tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=1.5cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+    }
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\newenvironment{problem}[2][练习题]
+    { \begin{mdframed}[backgroundcolor=gray!5] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+% Define solution environment
+\newenvironment{solution}
+    {\textbf{解:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+%\usepackage[utf8]{ctex}
+\usepackage[punct]{ctex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large\textbf{3212090710***\quad 姓名} \hfill \textbf{《高等代数选讲》作业 - No.~\Huge{01}}   \\
+专业: 信息与计算科学 \hfill 学号: 3212090710*** \\
+\normalsize 课程名称: 385460 - 高等代数选讲 (Selection of Advanced Algebra) \hfill 学期: 2024 春 (Spring 2024)\\
+授课教师: 艾武（教授） \hfill 完成时间: 2024年03月11日 \\
+\noindent\rule{7in}{1.8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{1}
+\textbf{（高等代数，南开大学，2022年）}: 计算行列式：
+\begin{align*}
+D_{4} & = \left|\begin{array}{llll}
+2^{4}+1 & 2^{3} & 2^{2} & 2 \\
+3^{4}+1 & 3^{3} & 3^{2} & 3 \\
+4^{4}+1 & 4^{3} & 4^{2} & 4 \\
+5^{4}+1 & 5^{3} & 5^{2} & 5
+\end{array}\right| .
+\end{align*}
+\end{problem}
+
+\begin{solution}
+\begin{align*}
+D_{4} & = \left|\begin{array}{llll}
+2^{4}+1 & 2^{3} & 2^{2} & 2 \\
+3^{4}+1 & 3^{3} & 3^{2} & 3 \\
+4^{4}+1 & 4^{3} & 4^{2} & 4 \\
+5^{4}+1 & 5^{3} & 5^{2} & 5
+\end{array}\right|
+=
+\end{align*}
+\end{solution} 
+
+%\noindent\rule{7in}{2.8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{2}
+\textbf{（高等代数，中山大学，2022年）}: 计算行列式：
+\begin{align*}
+D_{5} & =\left|\begin{array}{ccccc}
+2 & 1 & 1 & 1 & 1 \\
+1 & \frac{3}{2} & 1 & 1 & 1 \\
+1 & 1 & \frac{4}{3} & 1 & 1 \\
+1 & 1 & 1 & \frac{5}{4} & 1 \\
+1 & 1 & 1 & 1 & \frac{6}{5}
+\end{array}\right|
+\end{align*}
+\end{problem}
+
+\begin{solution}
+\begin{align*}
+D_{5} & =\left|\begin{array}{ccccc}
+2 & 1 & 1 & 1 & 1 \\
+1 & \frac{3}{2} & 1 & 1 & 1 \\
+1 & 1 & \frac{4}{3} & 1 & 1 \\
+1 & 1 & 1 & \frac{5}{4} & 1 \\
+1 & 1 & 1 & 1 & \frac{6}{5}
+\end{array}\right|
+=
+\end{align*}
+
+\end{solution} 
+
+%\noindent\rule{7in}{2.8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{3}
+\textbf{（高等代数与解析几何，东北师范大学，2024年）}: 求下列行列式：
+\begin{align*}
+\left|\begin{array}{cccc}
+1+x_1 & 1+x_1^2 & \cdots & 1+x_1^n \\
+1+x_2 & 1+x_2^2 & \cdots & 1+x_2^n \\
+\vdots & \vdots & & \vdots \\
+1+x_n & 1+x_n^2 & \cdots & 1+x_n^n
+\end{array}\right|
+\end{align*}
+\end{problem}
+
+\begin{solution}
+\begin{align*}
+\left|\begin{array}{cccc}
+1+x_1 & 1+x_1^2 & \cdots & 1+x_1^n \\
+1+x_2 & 1+x_2^2 & \cdots & 1+x_2^n \\
+\vdots & \vdots & & \vdots \\
+1+x_n & 1+x_n^2 & \cdots & 1+x_n^n
+\end{array}\right|
+=
+\end{align*}
+\end{solution} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

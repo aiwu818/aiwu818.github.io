@@ -1,0 +1,100 @@
+%%% XeLatex, TeXLive
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsthm}  % assumes amsmath package installed
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{verbatim}
+%\usepackage[numbered]{mcode}
+\usepackage{float}
+\usepackage{tikz}
+    \usetikzlibrary{shapes,arrows}
+    \usetikzlibrary{arrows,calc,positioning}
+    \tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=1.5cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+    }
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\newenvironment{problem}[2][练习题]
+    { \begin{mdframed}[backgroundcolor=gray!5] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+% Define solution environment
+\newenvironment{solution}
+    {\textbf{解:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+% Define solution environment
+\newenvironment{solution2}
+    {\textbf{证明:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+%\usepackage[utf8]{ctex}
+\usepackage[punct]{ctex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large\textbf{3212090710***\quad 姓名} \hfill \textbf{《高等代数选讲》作业 - No.~\Huge{04}}   \\
+专业: 信息与计算科学 \hfill 学号: 3212090710*** \\
+\normalsize 课程名称: 385460 - 高等代数选讲 (Selection of Advanced Algebra) \hfill 学期: 2024 春 (Spring 2024)\\
+授课教师: 艾武（教授） \hfill 完成时间: 2024年04月01日 \\
+\noindent\rule{7in}{1.8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{1}
+\textbf{（线性代数与常微分方程，山东大学，2024年）}: 设 $A, B, C$ 分别为 $m \times n, n \times t, s \times m$ 阶矩阵.
+
+(1) 若矩阵 $A$ 的秩 $r(A)=r$, 证明: 存在可逆阵 $P, Q$, 使得 $P A$ 的后 $m-r$ 行全为零, $A Q$ 的后 $n-r$ 列全为零.
+
+(2) 利用 (1) 证明: 若 $r(A)=n$, 则 $r(A B)=r(B)$; 若 $r(A)=m$, 则 $r(C A)=r(C)$.
+\end{problem}
+
+\begin{solution2}
+%% 过程写这里
+
+\end{solution2} 
+
+%\noindent\rule{7in}{2.8pt} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{2}
+\textbf{（高等代数，南京理工大学，2024年）}: 设 $A$ 为一个秩为 $r$ 的 $n$ 阶方阵, 且 $A^2=A$. 证明: 存在一个秩为 $r$ 的 $r \times n$ 矩阵 $B$ 与一个秩为 $r$ 的 $n \times r$ 矩阵 $C$, 满足 $A=C B$, 且 $B C=E_r$ ( $E_r$ 为 $r$ 阶单位矩阵).
+\end{problem}
+
+\begin{solution2}
+%% 过程写这里
+
+
+\end{solution2} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

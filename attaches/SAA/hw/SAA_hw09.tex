@@ -1,0 +1,127 @@
+%%% XeLatex, TeXLive
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsthm}  % assumes amsmath package installed
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{verbatim}
+%\usepackage[numbered]{mcode}
+\usepackage{float}
+\usepackage{tikz}
+    \usetikzlibrary{shapes,arrows}
+    \usetikzlibrary{arrows,calc,positioning}
+    \tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=1.5cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+    }
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\newenvironment{problem}[2][练习题]
+    { \begin{mdframed}[backgroundcolor=gray!5] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+% Define solution environment
+\newenvironment{solution}
+    {\textbf{解:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+% Define solution environment
+\newenvironment{solution2}
+    {\textbf{证明:}}
+    {}
+\renewcommand{\qed}{\quad\qedsymbol}
+%\usepackage[utf8]{ctex}
+\usepackage[punct]{ctex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large\textbf{3212090710***\quad 姓名} \hfill \textbf{《高等代数选讲》作业 - No.~\Huge{08}}   \\
+专业: 信息与计算科学 \hfill 学号: 3212090710*** \\
+\normalsize 课程名称: 385460 - 高等代数选讲 (Selection of Advanced Algebra) \hfill 学期: 2024 春 (Spring 2024)\\
+授课教师: 艾武（教授） \hfill 完成时间: 2024年04月29日 \\
+\noindent\rule{7in}{1.8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{1}
+\textbf{（高等代数，郑州大学，2024年）}: 设 $V=P^{2 \times 2}$ 是数域 $P$ 上的线性空间, $A=\left(\begin{array}{ll}a & b \\ c & d\end{array}\right) \in V$, 线性变换 $\sigma: X \rightarrow A X, \forall X \in P^{2 \times 2}$.
+
+(1)求线性变换 $\sigma$ 在基
+$$
+E_{11}=\left(\begin{array}{ll}
+1 & 0 \\
+0 & 0
+\end{array}\right), E_{12}=\left(\begin{array}{ll}
+0 & 1 \\
+0 & 0
+\end{array}\right), E_{21}=\left(\begin{array}{ll}
+0 & 0 \\
+1 & 0
+\end{array}\right), E_{22}=\left(\begin{array}{ll}
+0 & 0 \\
+0 & 1
+\end{array}\right)
+$$
+下的矩阵.
+
+(2) 如果 $A$ 相似于对角矩阵, 证明线性变换 $\sigma$ 在 $V$ 的某组基下的矩阵是对角矩阵.
+\end{problem}
+
+\begin{solution}
+%% 过程写这里
+
+\end{solution} 
+
+%\noindent\rule{7in}{2.8pt} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{2}
+\textbf{（线性代数与解析几何，中国科学技术大学，2024年）}: 对于任意向量 $X, Y \in \mathbb{R}^3$, 定义
+$$
+(X, Y)=X^T\left(\begin{array}{ccc}
+2 & 1 & 1 \\
+1 & 2 & 1 \\
+1 & 1 & 2
+\end{array}\right) Y .
+$$
+
+(1)证明上述定义给出了 $\mathbb{R}^3$ 上的一个内积.
+
+(2)利用 Schmidt 正交化从基向量组 $\alpha_1=(1,0,0)^T, \alpha_2=(1,0,1)^T, \alpha_3=(1,1,0)^T$ 构造一组标准正交基.
+\end{problem}
+
+\begin{solution}
+%% 过程写这里
+
+
+\end{solution} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
